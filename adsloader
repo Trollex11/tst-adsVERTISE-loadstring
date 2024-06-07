@@ -1,2 +1,45 @@
-print("new hello")
-print("bleefefsfefsfes")
+local Parcel = require(9428572121)
+
+if Parcel:Whitelist("65fb50e4f73553306b7ad340", "2ykfukmkveu6ypupay7kcg71oelq") then
+	local ad1 = script.Parent["1"]
+	local ad2 = script.Parent["2"]
+	local ad3 = script.Parent["3"]
+	local ad4 = script.Parent["4"]
+	local ad5 = script.Parent["5"]
+	local ad6 = script.Parent["6"]
+	local ad7 = script.Parent["7"]
+	local ad8 = script.Parent["8"]
+	local ad9 = script.Parent["9"]
+	local ad10 = script.Parent["10"]
+	local loading = script.Parent.LoadingAds
+
+	print("TST | Loading TST advertise system scripts.")
+	-- loading
+	loading.Visible = true
+	wait(20)
+	loading.Visible = false
+	--ADS
+
+	local ads = {
+		ad1,
+		ad2,
+		ad3,
+		ad4,
+		ad5,
+		ad6,
+		ad7,
+		ad8,
+		ad9
+	}
+	while true do
+		for i, ad in pairs(ads) do
+			ad.Visible = true
+			wait(30)
+			ad.Visible = false
+			wait(3)
+		end
+	end
+else
+	warn("TST | Please buy TST advertise system.")
+	script:Destroy()
+end
